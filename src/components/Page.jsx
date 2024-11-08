@@ -1,10 +1,10 @@
-import { useNavigate } from 'react-router-dom';
-import { backButton } from '@telegram-apps/sdk-react';
-import { useEffect } from 'react';
-import { Header } from './Header/Header';
-import { Footer } from './Footer/Footer';
+import { useNavigate } from "react-router-dom";
+import { backButton } from "@telegram-apps/sdk-react";
+import { useEffect } from "react";
+import { Header } from "./Header/Header";
+import { Footer } from "./Footer/Footer";
 
-export function Page({ children, back = true }) {
+export function Page({ children, back = true, style }) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export function Page({ children, back = true }) {
   return (
     <>
       <Header />
-      {children}
+      <div style={style}>{children}</div>
       <Footer />
     </>
   );

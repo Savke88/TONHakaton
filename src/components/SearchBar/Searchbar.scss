@@ -1,0 +1,25 @@
+.Search {
+  display: flex;
+
+  background-color: black;
+  color: white;
+  border-radius: 500px;
+  width: fit-content;
+  padding: 5px 20px;
+  img {
+    width: 30px;
+  }
+  input {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    font-family: Cristik;
+    margin-left: 5px;
+    &::placeholder {
+      color: white;
+      opacity: 0.5;
+    }
+  }
+}

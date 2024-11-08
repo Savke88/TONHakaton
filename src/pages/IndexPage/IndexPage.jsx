@@ -5,11 +5,27 @@ import { Page } from "@/components/Page.jsx";
 
 import tonSvg from "./ton.svg";
 import { Header } from "@/components/Header/Header";
+import { Searchbar } from "@/components/SearchBar/Searchbar";
+import { Button } from "@/components/Button/Button";
 
 export function IndexPage() {
   return (
-    <Page back={false}>
-      
+    <Page
+      back={false}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "100px",
+      }}
+    >
+      <Searchbar />
+      <Image />
+      <span> 0.00TON</span>
+      <Button> Broj Albuma </Button>
+      <Button> Broj Prijatelja</Button>
+      <Button> Comunity </Button>
     </Page>
   );
 }
