@@ -1,8 +1,8 @@
-import { TonConnectUIProvider } from '@tonconnect/ui-react';
+import { TonConnectUIProvider } from "@tonconnect/ui-react";
 
-import { App } from '@/components/App.jsx';
-import { ErrorBoundary } from '@/components/ErrorBoundary.jsx';
-import { publicUrl } from '@/helpers/publicUrl.js';
+import { App } from "@/components/App.jsx";
+import { ErrorBoundary } from "@/components/ErrorBoundary.jsx";
+import { publicUrl } from "@/helpers/publicUrl.js";
 
 function ErrorBoundaryError({ error }) {
   return (
@@ -12,9 +12,9 @@ function ErrorBoundaryError({ error }) {
         <code>
           {error instanceof Error
             ? error.message
-            : typeof error === 'string'
-              ? error
-              : JSON.stringify(error)}
+            : typeof error === "string"
+            ? error
+            : JSON.stringify(error)}
         </code>
       </blockquote>
     </div>
@@ -24,10 +24,8 @@ function ErrorBoundaryError({ error }) {
 export function Root() {
   return (
     <ErrorBoundary fallback={ErrorBoundaryError}>
-      <TonConnectUIProvider
-        manifestUrl={publicUrl('tonconnect-manifest.json')}
-      >
-        <App/>
+      <TonConnectUIProvider manifestUrl={publicUrl("tonconnect-manifest.json")}>
+        <App />
       </TonConnectUIProvider>
     </ErrorBoundary>
   );

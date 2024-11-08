@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { backButton } from '@telegram-apps/sdk-react';
 import { useEffect } from 'react';
+import { Header } from './Header/Header';
+import { Footer } from './Footer/Footer';
 
 export function Page({ children, back = true }) {
   const navigate = useNavigate();
@@ -15,5 +17,11 @@ export function Page({ children, back = true }) {
     backButton.hide();
   }, [back]);
 
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }

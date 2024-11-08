@@ -1,0 +1,1 @@
+.header{display:flex;align-items:center;justify-content:space-between;border:5px green solid}.header .logo{width:30%}.header ul{width:800px;display:flex;justify-content:space-between}.header ul li{list-style:none}
