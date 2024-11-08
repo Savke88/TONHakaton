@@ -24,6 +24,7 @@ export function IndexPage() {
         </Section>
         <h1>Probaaa</h1>
         <h2>opet probas</h2>
+        <h1>jos jedan pokusaj</h1>
         <Section
           header="Application Launch Data"
           footer="These pages help developer to learn more about current launch information"
