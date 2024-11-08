@@ -23,6 +23,7 @@ export function IndexPage() {
           </Link>
         </Section>
         <h1>Probaaa</h1>
+        <h2>opet probas</h2>
         <Section
           header="Application Launch Data"
           footer="These pages help developer to learn more about current launch information"
