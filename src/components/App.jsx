@@ -1,9 +1,9 @@
-import { useLaunchParams, miniApp, useSignal } from '@telegram-apps/sdk-react';
-import { AppRoot } from '@telegram-apps/telegram-ui';
-import { Navigate, Route, Routes, HashRouter } from 'react-router-dom';
-import { IndexPage } from '@/pages/IndexPage/IndexPage.jsx';
-import { FindRide } from './findRide/findRide.jsx';
-import { routes } from '@/navigation/routes.jsx';
+import { useLaunchParams, miniApp, useSignal } from "@telegram-apps/sdk-react";
+import { AppRoot } from "@telegram-apps/telegram-ui";
+import { Navigate, Route, Routes, HashRouter } from "react-router-dom";
+import { IndexPage } from "@/pages/IndexPage/IndexPage.jsx";
+import { FindRide } from "./findRide/findRide.jsx";
+import { routes } from "@/navigation/routes.jsx";
 
 export function App() {
   const lp = useLaunchParams();
@@ -11,14 +11,18 @@ export function App() {
 
   return (
     <AppRoot
-      appearance={isDark ? 'dark' : 'light'}
-      platform={['macos', 'ios'].includes(lp.platform) ? 'ios' : 'base'}
+      appearance={isDark ? "dark" : "light"}
+      platform={["macos", "ios"].includes(lp.platform) ? "ios" : "base"}
     >
       <HashRouter>
         <Routes>
-        <Route path="/" element={<IndexPage />} />
+          <Route path="/" element={<IndexPage />} />
 
-        <Route path="/find-ride" element={<FindRide />} />
+          <Route path="/find-ride" element={<FindRide />} />
+          {/*
+          {routes.map((route) => <Route key={route.path} {...route} />)}
+          <Route path="*" element={<Navigate to="/"/>}/>
+         */}
         </Routes>
       </HashRouter>
     </AppRoot>
