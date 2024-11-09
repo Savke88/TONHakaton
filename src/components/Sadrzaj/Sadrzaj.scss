@@ -1,0 +1,32 @@
+.Sadrzaj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%; 
+  background: linear-gradient(to bottom, #ffcc00, #ff9900); 
+
+  .image {
+    width: 30%; 
+    margin-bottom: 20px; 
+  }
+
+  .centerButton {
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em 3em;
+    border: 0.2em solid black; 
+    border-radius: 1.5em; 
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    width: 80%; 
+    max-width: 20em; 
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
