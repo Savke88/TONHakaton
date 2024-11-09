@@ -1,10 +1,10 @@
 import { Link } from "../Link/Link";
-import "./Header.css";
+import "./Header1.scss";
 
 export function Header() {
   let header = (
     <>
-      <div className="logo">
+      {/* <div className="logo">
         <Link to="/">
           <img src="" alt="logo" />
         </Link>
@@ -17,6 +17,8 @@ export function Header() {
           <Link to="/theme-params">theme-params</Link>
         </ul>
       </div>
+     */}
+    <h1 className="headerTon">TON TAXI</h1>
     </>
   );
 

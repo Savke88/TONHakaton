@@ -14,24 +14,19 @@ import Second from "@/components/Second/Second";
 export function IndexPage() {
   return (
     <Page
-      back={false}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        marginTop: "100px",
-      }}
+      // back={false}
+      // style={{
+      //   display: "flex",
+      //   flexDirection: "column",
+      //   alignItems: "center",
+      //   justifyContent: "center",
+      //   marginTop: "100px",
+      // }}
     >
-      <Searchbar />
-      <Image />
-      <span> 0.00TON</span>
-      <Button> Broj Albuma </Button>
-      <Button> Broj Prijatelja</Button>
-      <Button> Comunity </Button>
+    
       <Map
         iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
-        style={{ height: "400px", width: "80%" }}
+        style={{ height: "400px", width: "100%" }}
         markers={[
           { geocode: [44.7, 20.4], popUp: "Taksista 1" },
           { geocode: [44.82, 20.43], popUp: "Taksista 2" },
