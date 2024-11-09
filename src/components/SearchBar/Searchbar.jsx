@@ -1,7 +1,7 @@
 import { Section, Cell, Image, List } from "@telegram-apps/telegram-ui";
 
 import "./Searchbar.css";
-import Search from "./Search.png";
+import Search from "@/../assets/SearchBar/Search.png";
 
 export function Searchbar() {
   return (
