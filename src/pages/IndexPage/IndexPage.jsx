@@ -7,6 +7,7 @@ import tonSvg from "./ton.svg";
 import { Header } from "@/components/Header/Header";
 import { Searchbar } from "@/components/SearchBar/Searchbar";
 import { Button } from "@/components/Button/Button";
+import { Map } from "@/components/Map/Map";
 
 export function IndexPage() {
   return (
@@ -26,6 +27,15 @@ export function IndexPage() {
       <Button> Broj Albuma </Button>
       <Button> Broj Prijatelja</Button>
       <Button> Comunity </Button>
+      <Map
+        iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
+        style={{ height: "800px", width: "80%" }}
+        markers={[
+          { geocode: [44.7, 20.4], popUp: "Taksista 1" },
+          { geocode: [44.82, 20.43], popUp: "Taksista 2" },
+          { geocode: [44.67, 20.41], popUp: "Taksista 3" },
+        ]}
+      />
     </Page>
   );
 }
