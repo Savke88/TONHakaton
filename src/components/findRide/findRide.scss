@@ -1,0 +1,69 @@
+.find-ride-page {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100vh !important;
+  
+    .map-container {
+      flex-grow: 1; /* Ensures the map-container takes up all the available space */
+      height: 100%; /* Make the map-container fill the remaining space */
+      width: 100%; /* Full width of the viewport */
+      position: relative; /* Ensures proper positioning within the parent */
+    }
+  }
+  
+  .headerTon {
+    background-color: black;
+    color: yellow;
+    height: 10vh; /* Fixed height relative to the viewport height */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+  
+    @media (max-width: 768px) {
+      font-size: 1.5em; /* Slightly smaller text for mobile devices */
+    }
+  }
+  
+  .footer {
+    position: fixed; /* Keeps the footer at the bottom of the screen */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    .footerItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+  
+      .footerImage {
+        width: 10vw; /* Relative to viewport width */
+        max-width: 50px; /* Set a maximum limit */
+        height: auto;
+        margin-bottom: 5px;
+  
+        @media (max-width: 768px) {
+          width: 12vw; /* Slightly larger on mobile screens */
+          max-width: 40px; /* Limit for mobile screens */
+        }
+      }
+  
+      .footerText {
+        color: yellow;
+        font-size: 1em;
+        text-align: center;
+  
+        @media (max-width: 768px) {
+          font-size: 0.9em; /* Slightly smaller text for mobile devices */
+        }
+      }
+    }
+  }
+  

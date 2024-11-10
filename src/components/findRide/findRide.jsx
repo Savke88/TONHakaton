@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../Header/Header';
 import { Footer } from '../Footer/Footer';
 import { Map } from '../Map/Map';
-// import './FindRidePage.scss';
+import './findRide.scss';
 
 export function FindRide() {
   return (
