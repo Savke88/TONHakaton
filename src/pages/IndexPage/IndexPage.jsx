@@ -3,10 +3,6 @@ import { Section, Cell, Image, List } from "@telegram-apps/telegram-ui";
 import { Link } from "@/components/Link/Link.jsx";
 import { Page } from "@/components/Page.jsx";
 
-import tonSvg from "./ton.svg";
-import { Header } from "@/components/Header/Header";
-import { Searchbar } from "@/components/SearchBar/Searchbar";
-import { Button } from "@/components/Button/Button";
 import { Map } from "@/components/Map/Map";
 import First from "@/components/Firs/First";
 import Second from "@/components/Second/Second";
@@ -14,18 +10,17 @@ import Second from "@/components/Second/Second";
 export function IndexPage() {
   return (
     <Page
-      // back={false}
-      // style={{
-      //   display: "flex",
-      //   flexDirection: "column",
-      //   alignItems: "center",
-      //   justifyContent: "center",
-      //   marginTop: "100px",
-      // }}
+    // back={false}
+    // style={{
+    //   display: "flex",
+    //   flexDirection: "column",
+    //   alignItems: "center",
+    //   justifyContent: "center",
+    //   marginTop: "100px",
+    // }}
     >
-    
       <Map
-        iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
+        // iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
         style={{ height: "400px", width: "100%" }}
         markers={[
           { geocode: [44.7, 20.4], popUp: "Taksista 1" },

@@ -1,8 +1,6 @@
 import { useLaunchParams, miniApp, useSignal } from "@telegram-apps/sdk-react";
 import { AppRoot } from "@telegram-apps/telegram-ui";
 import { Navigate, Route, Routes, HashRouter } from "react-router-dom";
-import { IndexPage } from "@/pages/IndexPage/IndexPage.jsx";
-import { FindRide } from "./findRide/findRide.jsx";
 import { routes } from "@/navigation/routes.jsx";
 
 export function App() {
@@ -16,13 +14,10 @@ export function App() {
     >
       <HashRouter>
         <Routes>
-          <Route path="/" element={<IndexPage />} />
-
-          <Route path="/find-ride" element={<FindRide />} />
-          {/*
-          {routes.map((route) => <Route key={route.path} {...route} />)}
-          <Route path="*" element={<Navigate to="/"/>}/>
-         */}
+          {routes.map((route) => (
+            <Route key={route.path} {...route} />
+          ))}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </HashRouter>
     </AppRoot>

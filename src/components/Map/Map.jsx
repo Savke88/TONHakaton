@@ -1,6 +1,7 @@
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { Icon } from "leaflet";
+import markerIcon from "./marker.png";
 
 /*
  *@props style | stil mape
@@ -11,16 +12,16 @@ import { Icon } from "leaflet";
  *@props zoom @default 14 | Zumiranje mape
  */
 export function Map({
-  style,
-  markers,
-  iconUrl,
+  style = { height: "100vh", width: "100%" },
+  markers = [],
+  iconUrl = markerIcon,
   center = [44.799906, 20.447202],
   iconSize = 38,
   zoom = 14,
 }) {
   const customIcon = new Icon({
     iconUrl: iconUrl,
-    iconSize: [iconSize, iconSize],
+    iconSize: [0.73 * iconSize, 1 * iconSize],
     //iconUrl : require("@/../assets/SearchBar/Search.png"),
   });
 

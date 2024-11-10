@@ -18,7 +18,7 @@ export function Header() {
         </ul>
       </div>
      */}
-    <h1 className="headerTon">TON TAXI</h1>
+      <h1 className="headerTon">TON TAXI</h1>
     </>
   );
 

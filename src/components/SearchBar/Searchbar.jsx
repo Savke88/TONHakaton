@@ -1,14 +1,23 @@
-import { Section, Cell, Image, List } from "@telegram-apps/telegram-ui";
-
 import "./Searchbar.css";
-import Search from "@/../assets/SearchBar/Search.png";
 
 export function Searchbar() {
   return (
     <>
-      <div className="Search">
-        <img src={Search} />
-        <input type="text" placeholder="Search Album" />
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Enter destination"
+          // value={searchQuery}
+          // onChange={handleSearchChange}
+          className="search-input"
+        />
+      </div>
+      <div className="button-container">
+        <button className="search-button">
+          {" "}
+          {/*onClick={handleButtonClick} */}
+          Search
+        </button>
       </div>
     </>
   );
