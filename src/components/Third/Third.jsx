@@ -6,19 +6,19 @@ import coin from "../Firs/coin.png";
 import "./Third.css";
 // import Map from "@/components/Map/Map";
 import { Map } from "../Map/Map";
-import { useState } from "react";
+// import { useState } from "react";
 import { Searchbar } from "../SearchBar/Searchbar";
 
 export function Third() {
-  const [searchQuery, setSearchQuery] = useState(""); // State for search query
+  //   const [searchQuery, setSearchQuery] = useState(""); // State for search query
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
+  //   const handleSearchChange = (event) => {
+  //     setSearchQuery(event.target.value);
+  //   };
 
-  const handleButtonClick = () => {
-    alert(`Searching for: ${searchQuery}`);
-  };
+  //   const handleButtonClick = () => {
+  //     alert(`Searching for: ${searchQuery}`);
+  //   };
   return (
     <div className="app-container">
       <Map
