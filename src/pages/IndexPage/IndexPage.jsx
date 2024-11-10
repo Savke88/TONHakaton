@@ -24,7 +24,7 @@ export function IndexPage() {
       // }}
     >
     
-      <Map
+      {/* <Map
         iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
         style={{ height: "400px", width: "100%" }}
         markers={[
@@ -32,9 +32,9 @@ export function IndexPage() {
           { geocode: [44.82, 20.43], popUp: "Taksista 2" },
           { geocode: [44.67, 20.41], popUp: "Taksista 3" },
         ]}
-      />
-      <First />
-      <Second />
+      /> */}
+      {/* <First />
+      <Second /> */}
     </Page>
   );
 }
