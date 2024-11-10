@@ -19,17 +19,19 @@ export function IndexPage() {
     //   marginTop: "100px",
     // }}
     >
-      <Map
-        // iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
+
+    
+      {/* <Map
+        iconUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6qh61ytGqSAnhadCmTyOn9xCvoTtIcQAJw&s"
         style={{ height: "400px", width: "100%" }}
         markers={[
           { geocode: [44.7, 20.4], popUp: "Taksista 1" },
           { geocode: [44.82, 20.43], popUp: "Taksista 2" },
           { geocode: [44.67, 20.41], popUp: "Taksista 3" },
         ]}
-      />
-      <First />
-      <Second />
+      /> */}
+      {/* <First />
+      <Second /> */}
     </Page>
   );
 }
